@@ -6,7 +6,7 @@
 /*   By: naplouvi <naplouvi@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/10/18 16:51:06 by naplouvi     #+#   ##    ##    #+#       */
-/*   Updated: 2018/10/18 17:16:14 by naplouvi    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/10/19 16:46:59 by naplouvi    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -22,7 +22,7 @@ int	ft_check_tetrominos(char **tetro)
 	while (tetro[i])
 	{
 		j = 0;
-		if (ft_linelen(tetro[i]) != 4)
+		if (ft_lentochar(tetro[i], '\n') != 4)
 			ft_error();
 		while (tetro[i][j])
 		{

@@ -6,7 +6,7 @@
 #    By: naplouvi <naplouvi@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/10/02 10:51:00 by ftourret     #+#   ##    ##    #+#        #
-#    Updated: 2018/10/18 17:04:27 by naplouvi    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/10/19 16:45:51 by naplouvi    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -15,8 +15,7 @@ NAME = fillit
 
 FLAGS = -Wall -Wextra -Werror
 
-SRC =	fillit.c\
-		ft_error.c\
+SRC =	ft_error.c\
 		ft_check_tetrominos.c\
 		main.c\
 
