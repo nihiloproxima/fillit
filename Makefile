@@ -5,8 +5,8 @@
 #                                                  +:+:+   +:    +:  +:+:+     #
 #    By: naplouvi <naplouvi@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
-#    Created: 2018/10/02 10:51:00 by ftourret     #+#   ##    ##    #+#        #
-#    Updated: 2018/10/19 16:45:51 by naplouvi    ###    #+. /#+    ###.fr      #
+#    Created: 2018/11/20 16:02:12 by naplouvi     #+#   ##    ##    #+#        #
+#    Updated: 2018/11/20 16:02:16 by naplouvi    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -15,9 +15,13 @@ NAME = fillit
 
 FLAGS = -Wall -Wextra -Werror
 
-SRC =	ft_error.c\
-		ft_check_tetrominos.c\
+SRC =	error.c\
+		check.c\
 		main.c\
+		resolve.c\
+		map.c\
+		tetros.c\
+		info.c
 
 OBJ = $(subst .c,.o,$(SRC))
 
@@ -48,6 +52,7 @@ $(NAME): $(OBJ)
 
 clean:
 	@rm -rf $(OBJ)
+	@make -C libft/ clean
 	@echo "$(LIGHT_PINK)Suppression des .o de "$(NAME)"\n"
 
 fclean: clean
